@@ -505,6 +505,11 @@ body {
 }
 
 @media(max-width: 386px) {
+    .header {
+        background-attachment: scroll;
+        background-size: auto;
+    }
+
     .footer-col {
         width: 100%;
         margin-bottom: 0;
