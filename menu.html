@@ -42,13 +42,12 @@
     <!-----------Menu Content------------->
 
     <section class="menu">
-
         <div class="row">
             <div class="menu2-col">
                 <a href="https://www.clover.com/online-ordering/sweet-dots-nashville" target="_blank"
                     class="hero-btn2">Order Online</a>
-                <img src="images/menu1.png">
-                <img src="images/menu2.png">
+                <img src="images/menu/menu-april2024-1.png" class="hover-image">
+                <img src="images/menu/menu2.png">
             </div>
         </div>
     </section>
@@ -110,6 +109,21 @@
             navLinks.style.right = "-200px";
         }
 
+    </script>
+
+    <!------JavaScript for Image Hover Effect------>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var hoverImage = document.querySelector('.hover-image');
+
+            hoverImage.addEventListener('mouseover', function () {
+                this.src = 'images/menu/menu-april2024-2.png'; // Path to the new image
+            });
+
+            hoverImage.addEventListener('mouseout', function () {
+                this.src = 'images/menu/menu-april2024-1.png'; // Path to the original image
+            });
+        });
     </script>
 
 </body>
